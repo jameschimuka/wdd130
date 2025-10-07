@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #055a05;       /* forest green */
-  --secondary-color: #f4a261;     /* warm sand */
-  --accent1-color: #264653;       /* dark slate blue */
-  --accent2-color: #e9c46a;       /* light golden yellow */
+  --primary-color: #055a05;
+  --secondary-color: #f4a261;
+  --accent1-color: #264653;
+  --accent2-color: #e9c46a;
   --heading-font: "Times New Roman", Georgia, serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
@@ -16,11 +16,7 @@
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
-  background-color: #add8e6; /* light blue */
-}
-{
-  font-family: var(--body-font);
-  color: var(--accent1-color);
+  background-color: #ffffff;
 }
 
 header, main, footer {
@@ -38,10 +34,33 @@ nav, p, section, article {
   padding: 8px;
 }
 
-.socialmedia a {
-  text-decoration: none;
+/* Header Grid Layout */
+.header-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 20px;
 }
 
+.logo {
+  max-width: 100px;
+}
+
+/* Nav Flex Layout */
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--accent2-color);
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--accent1-color);
+  font-weight: bold;
+}
+
+/* Hero Section */
 .hero {
   position: relative;
 }
@@ -58,16 +77,16 @@ nav, p, section, article {
   width: 100%;
   padding: 16px;
   text-align: center;
-  opacity: 0.7;
   background-color: var(--accent1-color);
   color: #fff;
+  opacity: 0.85;
 }
 
 .hero article {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background: rgba(255,255,255,0.8);
+  background: rgba(255, 255, 255, 0.9);
   padding: 10px;
   max-width: 300px;
 }
@@ -76,4 +95,23 @@ nav, p, section, article {
   float: right;
   width: 125px;
   margin-left: 10px;
+}
+
+/* Footer Styling */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--accent2-color);
+  padding: 10px 20px;
+}
+
+.socialmedia {
+  display: flex;
+  gap: 10px;
+}
+
+.socialmedia img {
+  width: 24px;
+  height: 24px;
 }
