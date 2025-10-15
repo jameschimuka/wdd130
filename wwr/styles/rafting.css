@@ -263,3 +263,210 @@ fieldset.purpose legend {
   margin-top: 6px;
   font-weight: bold;
 }
+
+/* ---------- HOME PAGE ADDITIONS ---------- */
+.cta {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.cta h2 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.cta a {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta a:hover {
+  background-color: var(--accent1-color);
+}
+
+/* Mission Section */
+.mission {
+  background-color: rgba(233, 196, 106, 0.1);
+  padding: 30px;
+  text-align: center;
+  border-radius: 6px;
+  margin: 40px 0;
+}
+
+.mission h2 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+/* Highlights Section (Why Choose Us) */
+.highlights {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.highlights h2 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+/* ---------- TRIPS PAGE ADDITIONS ---------- */
+.trip-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.trip-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.trip {
+  background-color: rgba(233, 196, 106, 0.15);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.trip:hover {
+  transform: scale(1.02);
+}
+
+.trip h3 {
+  margin-top: 10px;
+  color: var(--primary-color);
+}
+
+.trip p {
+  margin: 10px 0;
+}
+
+/* Trip Call-to-Action */
+.trip-cta {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.trip-cta a {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.trip-cta a:hover {
+  background-color: var(--accent1-color);
+}
+
+/* ---------- TRIPS PAGE STYLING ---------- */
+
+/* Hero section at top of trips page */
+.trip-hero {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.trip-hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.trip-hero h1 {
+  color: var(--primary-color);
+  margin: 20px 0 10px;
+}
+
+.trip-hero p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--accent1-color);
+}
+
+/* Trip cards grid */
+.trip-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.trip {
+  background-color: rgba(233, 196, 106, 0.15);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(38, 70, 83, 0.1);
+}
+
+.trip:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.trip img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.trip h3 {
+  margin: 12px 0 8px;
+  color: var(--primary-color);
+  font-family: var(--heading-font);
+}
+
+.trip p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* CTA section for bookings */
+.trip-cta {
+  text-align: center;
+  background-color: rgba(244, 162, 97, 0.15);
+  padding: 40px 20px;
+  border-radius: 6px;
+  margin: 40px 0;
+}
+
+.trip-cta h2 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.trip-cta p {
+  color: var(--accent1-color);
+  margin-bottom: 15px;
+}
+
+.trip-cta a {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.trip-cta a:hover {
+  background-color: var(--accent1-color);
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
